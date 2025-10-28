@@ -1,0 +1,362 @@
+
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playwrite+DE+Grund+Guides&display=swap');
+
+html {
+    /* Faz com que toda a rolagem da página seja suave */
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    margin-left: 10px;
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    /*background-color: #EBE9DD;*/
+
+}
+
+
+/* ---------- NAVBAR ---------- */
+.navbar {
+  position: fixed;              
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 60px;
+  background-color: #EBE9DD;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  gap: 10px;    /*distancia entre a foto e o nome */
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #30332F;
+  font-size: 18px;
+  
+}
+
+.logo img {
+  border-radius: 50%;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #30332F;
+  font-weight: 500;
+  padding: 8px 15px;
+  transition: color 0.3s;
+}
+
+.menu li a:hover {
+  color: #666;
+}
+
+
+.inicio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;              /*100vh = 100% da altura total da tela.*/
+  position: relative;
+  padding:0 80px;
+  background-color: #30332F;
+  box-sizing: border-box;
+  margin-top: 80px;             /* espaço para não esconder o conteúdo sob o navbar */
+  padding-left: 150px;
+}
+
+/* Ícones laterais */
+.redes-sociais {
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Conteúdo */
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 1200px;
+  gap: 80px;
+}
+
+.subtitulo {
+  text-align: right;
+  width: 100%;
+  display: block;
+  
+}
+
+/* Textos */
+.text h2 {
+  font-weight: 400;
+  margin: 0;
+  font-size: 2rem;
+  color: #EBE9DD;
+}
+
+.text h1 {
+  font-size: 2.5rem;
+  margin: 10px 0;
+  color: #EBE9DD;
+}
+
+.text h1 strong {
+  font-weight: 600;
+}
+
+.text p {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  color: #EBE9DD;
+  align-items: le;
+}
+
+/* Botões */
+.buttons {
+  display: flex;
+  gap: 20px;
+  margin-left: 170px;
+}
+
+.btn-projetos,
+.btn-contatos {
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+.btn-projetos {
+  border: 1px solid #EBE9DD;
+  color: #EBE9DD;
+}
+
+.btn-projetos:hover {
+  background-color: #EBE9DD;
+  color: #30332F;
+}
+
+.btn-contatos {
+  border: 1px solid #EBE9DD;
+  color: #EBE9DD;
+}
+
+.btn-contatos:hover {
+  background-color: #EBE9DD;
+  color: #30332F;
+}
+
+/* Foto */
+.foto img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #EBE9DD;
+  margin-right: 90px;
+
+}
+
+
+/*2° seção - SOBRE MIM */
+
+.sobre-mim{
+  background-color: #EBE9DD;
+  padding: 80px 0;
+}
+.sobre-conteudo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  max-width: 1000px;        /*Isso define a largura máxima que o elemento pode ter.*/
+  margin: 0 auto;          /*Essa é a parte que centraliza horizontalmente o bloco.*/
+
+}
+
+.sobre-texto{
+  max-width: 800px;
+  text-align: justify;
+  color: #000;
+}
+h2{
+  font-weight: 700;
+  margin-top: 30px;
+  font-family: "Libre Baskerville", serif;
+  font-size:38px;
+  align-items: center;
+ /* margin-left: 80px;*/
+
+}
+.sobre-texto, p {
+  line-height: 1.6;
+  font-size: 18px;
+  color: black;
+  align-items: justify;
+}
+
+/*3 ° seção - Projetos  */
+
+/* Estilos Gerais (Background e Título) */
+.carousel-container {
+    background-color: #EBE9DD; /* Cor de fundo creme */
+    padding: 50px 0;
+    text-align: center;
+    font-family: "Libre Baskerville", serif;
+    color: #333;
+    overflow: hidden; /* Importante para o efeito 'fora da tela' */
+   min-height: 100vh; 
+  }
+
+/* Container do Carrossel */
+.carousel-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 50px auto;
+    position: relative;
+}
+
+/* Faixa dos Cards (Onde a mágica acontece) */
+.carousel-track {
+    display: flex;
+    overflow: hidden; /* Garante que os cards que saem da tela sumam */
+    width: 80%; /* Ajuste o quão grande o seu carrossel deve ser */
+    /* Configurações para o JavaScript animar */
+    transition: transform 0.5s ease-in-out;
+    padding: 0 5%; /* Para dar espaço para os cards laterais */
+}
+
+/* Estilo do Card Individual */
+.project-card {
+    min-width: 300px; /* Largura base do card */
+    height: 400px;
+    background-color: #ccc; /* Cor do preenchimento */
+    border-radius: 20px;
+    margin: 0 15px; /* Espaçamento entre os cards */
+    /* TRANSFORMAÇÕES para o visual de "peek-a-boo" */
+    transform: scale(0.85); /* Reduz um pouco os cards não ativos */
+    opacity: 0.2; /* Deixa-os transparentes (o cinza da sua imagem) */
+    transition: all 0.5s ease-in-out;
+}
+
+
+/* Botões de Navegação (As setas laterais) */
+.nav-button {
+    background: none;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000; /* Cor das setas */
+    z-index: 10;
+    /* Estilo de fundo transparente/sólido como na sua imagem */
+    padding: 20px 10px;
+    
+}
+
+.prev-button { left: 0; }
+.next-button { right: 0; }
+
+/* Indicadores de Paginação */
+.carousel-dots {
+    margin-top: 30px;
+}
+
+/* Estilo Básico de cada Barra */
+.dot {
+    display: inline-block;
+    width: 60px;          /* Largura maior para parecer uma barra */
+    height: 8px;          /* Altura para a barra ter substância */
+    background-color: #cccccc; /* Cinza claro para as barras inativas */
+    margin: 0 8px;        /* Espaçamento entre as barras */
+    border-radius: 5px;   /* Cantos levemente arredondados */
+    transition: background-color 0.3s, opacity 0.3s;
+    opacity: 0.6;         /* Deixa as inativas um pouco transparentes */
+}
+
+/* Estilo da Barra ATIVA (A mais escura) */
+.dot.active {
+    background-color: #444444; /* Cinza escuro/Preto para a ativa */
+    opacity: 1;             /* Deixa a barra ativa totalmente sólida */
+}
+
+/* Aumenta o card e o deixa mais opaco ao passar o mouse */
+.project-card:hover {
+    transform: scale(0.9); /* Aumenta um pouco mais, mas ainda menos que o card focado */
+    opacity: 0.7; /* Aumenta a opacidade para parecer mais "pronto para o clique" */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+/* Se quiser que o card focado não tenha efeito de hover */
+.project-card.focused-card:hover {
+    transform: scale(1); /* Mantém o tamanho original do focado */
+    opacity: 1; /* Mantém a opacidade original */
+    cursor: default; /* Remove o ponteiro de clique (opcional) */
+}
+.project-card {
+    /* ...outras propriedades... */
+    transition: all 0.5s ease-in-out; /* Garante transições suaves para TODAS as mudanças */
+}
+
+/* [OPCIONAL] Ajuste para o Card que está quase saindo da tela */
+/* Você pode adicionar estilos para os cards antes e depois do 'focused-card' para imitar o efeito de "desfoque" ou "bordas arredondadas" conforme ele sai, usando os seletores de CSS :nth-child ou :has() (se tiver bom suporte). */
+
+/*RESPONSIVIDADE*/
+
+/* Mobile  */
+.container {
+    width: 100%;
+    padding: 15px;
+}
+
+/* Aplica estes estilos quando a tela for maior ou igual a 768px (exemplo para tablets) */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+        margin: 0 auto;
+    }
+}
+
+/* Aplica estes estilos quando a tela for maior ou igual a 1200px (exemplo para desktops) */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+img {
+    max-width: 100%; /* Garante que a imagem não seja maior que seu container */
+    height: auto;    /* Mantém a proporção da imagem */
+}
